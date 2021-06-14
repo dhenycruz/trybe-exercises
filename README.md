@@ -1,0 +1,1 @@
+Esse repositório é destinada a guardar os exercícios realizados no course na plataforma da TRYBE.
