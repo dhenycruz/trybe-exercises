@@ -1,8 +1,6 @@
 Unix
 Bash
 Git
-Unix
-Bash
-Git
+JavaScript
 HTML
 CSS
