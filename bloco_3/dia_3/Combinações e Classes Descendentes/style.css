@@ -1,0 +1,48 @@
+ol li {
+    background-color: yellow;
+}
+.item-par {
+    color: green;
+}
+.item-impar {
+    text-transform: uppercase;
+}
+h1, h3 {
+    color: red;
+}
+h1 em {
+    font-size: 40px;
+    border: 1px solid #000;
+}
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: bold;
+}
+.font-color-blue {
+    color: blue;
+}
+.fundo-rosa {
+    background-color: palevioletred;
+}
+.StackOverflow a:hover {
+    font-weight: bold;
+    color:peru;
+}
+.W3Schools a:hover {
+    font-weight: bold;
+    color: green;
+}
+.MDN a:hover {
+    font-weight: bold;
+    color: #000;
+}
+.DevDocs a:hover {
+    font-weight: bold;
+    color: yellow;
+}
+.Trybe a:hover {
+    font-weight: bold;
+    color: green;
+}
