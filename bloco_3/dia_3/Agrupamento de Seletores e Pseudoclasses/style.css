@@ -1,0 +1,15 @@
+h1, p {
+    text-align: center;
+}
+
+ol:hover {
+    background-color: #cce6ff;
+}
+
+li:active {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+ol, ul {
+    list-style: none;
+}

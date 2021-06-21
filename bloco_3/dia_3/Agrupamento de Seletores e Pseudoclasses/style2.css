@@ -1,0 +1,43 @@
+div {
+    margin-bottom: 10px;
+}
+div:hover {
+    border-style: dashed;
+}
+
+.cor-primaria {
+    background-color: red;
+}
+
+.cor-secundaria {
+    background-color: royalblue;
+}
+
+.cor-complementar {
+    background-color: slateblue;
+}
+
+.cor-escura {
+    color: #fff;
+    background-color: #003300;
+}
+
+.cor-clara {
+    background-color: #ffb3e6;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.terceira-div {
+    width: 100%;
+    height: 45px;
+    
+}
+
+.div-impar {
+    font-style: italic;
+}
