@@ -1,6 +1,6 @@
-let num1 = 4;
-let num2 = 5;
+let a = 4;
+let b = 5;
 
-let adicao = num1 + num2;
+let adicao = a + b;
 
 console.log(adicao);
