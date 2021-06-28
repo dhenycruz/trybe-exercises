@@ -3,7 +3,7 @@
 let min = 1;
 let max = 100;
 let meuArray = [];
-
+let meuArrayDiv = [];
 for (index = 0; index < 25; index += 1) {
     let number =  Math.floor(Math.random() * (max - min)) + min;
     meuArray.push(number);
