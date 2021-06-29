@@ -2,12 +2,12 @@
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-console.log(numbers.length);
+//console.log(numbers.length);
 
 for (let index = 0; index <= numbers.length; index += 1){
     let index2 = index +1;
-    if(index === numbers.length){
-        numbers[index] = numbers[index] * 2;
+    if(index + 1 < numbers.length){
+        //numbers[index] = numbers[index] * 2;
     } else {
         numbers[index] = numbers[index] * numbers[index2];
     }
