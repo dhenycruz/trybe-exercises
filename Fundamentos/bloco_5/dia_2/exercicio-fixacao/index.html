@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerício de Fixação - DOM e Seletores</title>
+</head>
+<body>
+    <div id="paiDoPai">
+        <div id="pai">
+          <div id="primeiroFilho"></div>
+          <div id="elementoOndeVoceEsta">
+            <div id="primeiroFilhoDoFilho"></div>
+            <div id="segundoEUltimoFilhoDoFilho"></div>
+          </div>
+          Atenção!
+          <div id="terceiroFilho"></div>
+          <div id="quartoEUltimoFilho"></div>
+        </div>
+    </div>
+    <script>
+      // 1. Acesse o elemento elementoOndeVoceEsta.
+      let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+      // 2. Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+      elementoOndeVoceEsta.parentElement.setAttribute('style', 'background-color: green;');
+      // 3. Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+      document.getElementById('primeiroFilhoDoFilho').innerHTML = 'Adiconando texto no elemento primeiroFilhoDoFilho.';
+      // 4. Acesse o primeiroFilho a partir de pai .
+      document.getElementById('pai').firstElementChild;
+      // 5. Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+      document.getElementById('elementoOndeVoceEsta').previousElementSibling;
+      // 6. Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+      document.querySelector('#elementoOndeVoceEsta').parentElement.innerText;
+      // 7. Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+      document.querySelector('#elementoOndeVoceEsta').nextElementSibling;
+      // 8. Agora acesse o terceiroFilho a partir de pai.
+      let pai = document.querySelector('#pai');
+      document.querySelector('#pai').lastElementChild.previousElementSibling;
+    </script>
+</body>
+</html>
