@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerício de Fixação - DOM e Seletores</title>
+</head>
+<body>
+    <div id="paiDoPai">
+        <div id="pai">
+          <div id="primeiroFilho"></div>
+          <div id="elementoOndeVoceEsta">
+            <div id="primeiroFilhoDoFilho"></div>
+            <div id="segundoEUltimoFilhoDoFilho"></div>
+          </div>
+          Atenção!
+          <div id="terceiroFilho"></div>
+          <div id="quartoEUltimoFilho"></div>
+        </div>
+    </div>
+    <script>
+        // Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho.
+        let allDivs = document.querySelectorAll('div');
+        let primeiroFilho = document.querySelector('#primeiroFilho');
+        let pai = document.querySelector('#pai');
+        let paiDoPai = document.querySelector('#paiDoPai');
+        let elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
+
+        for (let div of allDivs) {
+          if (div === paiDoPai || div === primeiroFilho || div === pai || div === elementoOndeVoceEsta) {
+              console.log(div);
+          } else {
+              div.parentElement.removeChild(div);
+          }
+        }
+    </script>
+</body>
+</html>
