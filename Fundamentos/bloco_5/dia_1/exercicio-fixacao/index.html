@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      // parte 1
+      // 1. Recupere o elemento que contém o título da página e faça algo com ele, como alterá-lo para o nome do seu filme favorito.
+      const title = document.getElementById('page-title');
+      title.innerText = 'Busca da felicidade';
+      // 2. Agora recupere o segundo parágrafo e use sua criatividade para alterá-lo.
+      const secondParagraph = document.querySelector('#second-paragraph');
+      secondParagraph.setAttribute('style', 'background-color: green;');
+      // 3. Por fim, recupere o subtítulo e altere-o também.
+      const subtitle = document.getElementById('subtitle');
+      subtitle.setAttribute('style', 'color: blue; font-size: 15px;');
+      // parte 2
+      // 1. Adicione uma classe igual para os dois parágrafos.
+      const paragraphs = document.querySelectorAll('p');
+      for (const p of paragraphs) {
+        paragraph.className = 'class-paragraph';
+      }
+      // 2. Recupere os seus parágrafos via código JavaScript , usando a função getElementsByClassName ;
+      const paragraphClass = document.getElementsByClassName('class-paragraph');
+      // 3. Altere algum estilo do primeiro deles.
+      const primaryParagraph = document.querySelector('p');
+      primaryParagraph.setAttribute('style', 'color: pink; font-size: 25px;');
+      // 4. Recupere o subtítulo e altere a cor dele usando a função getElementsByTagName.
+      const subtitle2 = document.getElementsByTagName('h4');
+      for (const sub of subtitle2) {
+        sub.setAttribute('style', 'color: violet;');
+      }
+    </script>
+
+  </body>
+</html>
