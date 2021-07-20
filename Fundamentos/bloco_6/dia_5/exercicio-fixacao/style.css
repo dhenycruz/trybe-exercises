@@ -75,8 +75,8 @@ Para os seguintes exercícios você não precisará alterar o arquivo HTML, apen
 */
 
 @media screen and (max-width: 500px) {
-  p.trick {
-    color: black;
+  p {
+    color: #525252;
   }
 }
 @media screen and (min-width: 500px) {
