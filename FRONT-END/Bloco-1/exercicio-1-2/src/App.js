@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Cardlist from './cards';
 
 const task = (value) => {
   return (
@@ -11,9 +12,12 @@ const compromissos = ['JSX', 'ReactDOM.render', 'CSS e Import'];
 
 function App() {
   return (
-    <ol>
-      {compromissos.map((value) => task(value))}
-    </ol>
+    <div>
+      <ol>
+        {compromissos.map((value) => task(value))}
+      </ol>
+      <Cardlist />
+    </div>
    /*  <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
